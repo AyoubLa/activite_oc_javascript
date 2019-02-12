@@ -6,11 +6,23 @@
     <title>Gestion des contacts</title>
 </head>
 <button id="lstContacts">Lister les contacts</button>
-<button id="lstContacts">Ajouter un contact</button>
+<button id="ajouter">Ajouter un contact</button>
 <button id="quitter">Quitter</button>
-<div class="contacts">
-	
+<div id="contacts">
 </div>
+<form id="formulaire" style="display: none;">
+	<div>
+		<label>Nom</label>
+		<input type="text" id="nom" name="nom">
+	</div>
+	<div>
+		<label>Prenom</label>
+		<input type="text" id="prenom" name="prenom">
+	</div>
+	<div>
+		<button id="submitAjout">Ajouter</button>
+	</div>
+</form>
 <body>
     <script src="../js/contacts.js"></script>
 </body>
